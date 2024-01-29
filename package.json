@@ -33,6 +33,13 @@
       "@metafoks/eslint-config"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meatafoks/Cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@types/figlet": "^1.5.8",
     "chalk": "4.1.2",
