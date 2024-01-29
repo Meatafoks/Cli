@@ -1,0 +1,43 @@
+{
+  "name": "@metafoks/cli",
+  "version": "1.0.0",
+  "description": "Metafoks application command line interface",
+  "scripts": {
+    "build": "cp -r ./src/copy ./lib && tsc",
+    "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "lint": "eslint src --fix --ext .js,.ts",
+    "watch": "nodemon --watch ./src --exec \"npm run build\" -e ts"
+  },
+  "keywords": ["metafoks", "framework", "cli"],
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "author": "Yakov Foks <notafoks@yandex.ru>",
+  "license": "MIT",
+  "bin": {
+    "metafoks": "bin/index.js"
+  },
+  "devDependencies": {
+    "@metafoks/eslint-config": "1.0.0",
+    "@metafoks/prettier": "1.0.0",
+    "@types/node": "^20.11.10",
+    "eslint": "8.56.0",
+    "nodemon": "^3.0.2",
+    "prettier": "3.2.4"
+  },
+  "prettier": "@metafoks/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@metafoks/eslint-config"
+    ]
+  },
+  "dependencies": {
+    "@types/figlet": "^1.5.8",
+    "chalk": "4.1.2",
+    "figlet": "^1.7.0",
+    "log-update": "^6.0.0",
+    "yargs": "^17.7.2"
+  }
+}

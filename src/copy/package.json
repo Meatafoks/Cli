@@ -1,0 +1,29 @@
+{
+  "name": "metafoks-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "node esbuild.config.js",
+    "watch": "nodemon --watch ./src --exec \"npm run build\" -e ts"
+  },
+  "main": "./build/index.js",
+  "prettier": "@metafoks/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@metafoks/eslint-config"
+    ]
+  },
+  "dependencies": {
+    "@metafoks/app": "^1.0.8",
+    "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "@metafoks/eslint-config": "^1.0.0",
+    "@metafoks/prettier": "^1.0.0",
+    "esbuild": "0.17.19",
+    "eslint": "^8.56.0",
+    "ts-node": "10.9.2",
+    "prettier": "^3.2.1"
+  }
+}

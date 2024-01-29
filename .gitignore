@@ -1,0 +1,15 @@
+*
+!src/
+!src/**/*
+
+!bin/
+!bin/**/*
+
+!locale/
+!locale/**/*
+
+!.npmignore
+!.gitignore
+!package.json
+!README.md
+!tsconfig.json
