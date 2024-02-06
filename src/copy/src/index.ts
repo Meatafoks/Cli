@@ -1,6 +1,6 @@
 import { MetafoksApplication } from '@metafoks/app';
 
-@MetafoksApplication()
+@MetafoksApplication
 export class Application {
     public constructor(private deps: {}) {}
 
