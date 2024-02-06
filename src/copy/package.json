@@ -15,7 +15,7 @@
     ]
   },
   "dependencies": {
-    "@metafoks/app": "^1.1.4",
+    "@metafoks/app": "^1.1.5",
     "typescript": "5.3.3"
   },
   "devDependencies": {

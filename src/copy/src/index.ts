@@ -4,7 +4,8 @@ import { MetafoksApplication } from '@metafoks/app';
 export class Application {
     public constructor(private deps: {}) {}
 
-    async start() {
+    start() {
         // application starts here
+        // this function could be async
     }
 }
