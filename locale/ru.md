@@ -50,7 +50,7 @@ metafoks init
 import { MetafoksApplication, createLogger } from "@metafoks/app";
 import MyService from './my.service.ts';
 
-@MetafoksApplication()
+@MetafoksApplication
 class Application {
     private logger = createLogger( Application );
 
@@ -112,7 +112,7 @@ export default class DbComponent {
 import { MetafoksApplication, createLogger } from "@metafoks/app";
 import DbComponent from './db.component.ts';
 
-@MetafoksApplication()
+@MetafoksApplication
 class Application {
     private logger = createLogger( Application );
 
@@ -164,16 +164,6 @@ export default class BotComponent {
 ### Расширения
 
 ```typescript
-import { MetafoksContext } from "@metafoks/app";
-
-MetafoksContext.getContext()
-```
-
-`getContext()` возвращает контекст приложения.
-
-Простейший пример:
-
-```typescript
 // module: @custom/tg
 // file: index.ts
 
@@ -187,6 +177,8 @@ export class TelegramBot {
 
 export function telegramBotExtension(context: MetafoksContext) {
     context.addClass( "telegramBot", TelegramBot );
+    
+    return {}
 }
 ```
 
