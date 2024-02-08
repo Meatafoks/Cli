@@ -29,6 +29,12 @@ export default async function cli() {
         printHelp();
     }
 
+    if (process.argv[2] === 'test') {
+        console.log('Started project testing...');
+        const jestConfigPath = path.resolve(__dirname, '/jest.config.js');
+        child_process.execSync(`jest -c '${jestConfigPath}'`, { cwd: currentPath, stdio: 'inherit' });
+    }
+
     if (process.argv[2] === 'init') {
         console.log('Started project init...');
 

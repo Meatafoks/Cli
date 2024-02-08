@@ -12,15 +12,23 @@
   "eslintConfig": {
     "extends": [
       "@metafoks/eslint-config"
+    ],
+    "env": {
+      "jest": true
+    },
+    "plugins": [
+      "jest"
     ]
   },
   "dependencies": {
-    "@metafoks/app": "^1.1.6",
+    "@metafoks/app": "^1.1.9",
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@metafoks/eslint-config": "^1.0.0",
-    "@metafoks/prettier": "^1.0.0",
+    "@metafoks/eslint-config": "1.0.0",
+    "@metafoks/prettier": "1.0.0",
+    "@types/jest": "29.5.12",
+    "eslint-plugin-jest": "27.6.3",
     "esbuild": "0.17.19",
     "eslint": "^8.56.0",
     "ts-node": "10.9.2",
