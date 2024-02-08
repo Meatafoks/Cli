@@ -1,6 +1,6 @@
 {
   "name": "@metafoks/cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Metafoks application command line interface",
   "scripts": {
     "build": "cp -r ./src/copy ./lib && tsc",
